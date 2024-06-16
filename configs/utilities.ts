@@ -26,5 +26,9 @@ export const UTILITIES: Utilities = {
       title: "React Hook Form",
       utilities: [{dependencie: "react-hook-form", version: "", dev: true}],
     },
+    {
+      title: "Payload",
+      utilities: [{dependencie: "payload", version: "", dev: false}],
+    },
   ],
 };
