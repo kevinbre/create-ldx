@@ -1,8 +1,8 @@
-# create-microgeo
+# create-ldx
 
 ## Descripción
 
-Este es un CLI para la creación rápida de proyectos de microfrontends.
+Este es un CLI para la creación rápida de proyectos utilizando Vite + Tailwind.
 
 ## Requisitos previos
 
@@ -14,7 +14,7 @@ Asegúrate de tener Node.js instalado en tu máquina antes de usar este CLI.
 2. Navega al directorio donde deseas crear tu proyecto.
 3. Ejecuta el siguiente comando:
 
-npx create-microgeo
+npx create-ldx
 
 ## Preguntas Interactivas
 

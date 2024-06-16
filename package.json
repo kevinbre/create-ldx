@@ -1,14 +1,16 @@
 {
-  "name": "create-microgeo",
-  "version": "1.2.1",
-  "description": "Create Microfrontend",
+  "name": "create-ldx",
+  "version": "1.3.1",
+  "description": "Create Vite + Tailwind project",
   "main": "index.mjs",
   "bin": "dist/index.js",
   "files": [
     "dist/**/*"
   ],
   "keywords": [
-    "microgeo"
+    "Tailwind",
+    "Vite",
+    "Typescript"
   ],
   "author": "kevinbre",
   "license": "ISC",
