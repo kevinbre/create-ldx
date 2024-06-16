@@ -25,7 +25,7 @@ async function main() {
       name: () =>
         clack.text({
           message: "What is the name of your project?",
-          placeholder: "microfrontend-example",
+          placeholder: "ldx-example",
           validate: (value) => {
             destination = path.join(process.cwd(), value);
 
