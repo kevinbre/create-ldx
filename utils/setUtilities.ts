@@ -31,7 +31,7 @@ export async function setUtilities({project, destination}: Props): Promise<void>
     {
       selected: () =>
         p.multiselect({
-          message: "Select utilities:",
+          message: "Select utilities (use spacebar to select):",
           options: UTILITIES[project].map((utilGroup) => ({
             label: utilGroup.title,
             value: utilGroup.utilities,
@@ -53,11 +53,13 @@ export async function setUtilities({project, destination}: Props): Promise<void>
     const packageJsonPath = path.join(destination, "package.json");
     const packageJson = JSON.parse(await readFile(packageJsonPath, "utf8"));
 
-    utilities.selected.forEach((selectedUtility) => {
-      const dependenciesSection = selectedUtility.dev
-        ? packageJson.devDependencies
-        : packageJson.dependencies;
-      dependenciesSection[selectedUtility.dependencie] = selectedUtility.version || "latest";
+    utilities.selected.forEach((utilityGroup: any) => {
+      utilityGroup.forEach((selectedUtility) => {
+        const dependenciesSection = selectedUtility.dev
+          ? packageJson.devDependencies
+          : packageJson.dependencies;
+        dependenciesSection[selectedUtility.dependencie] = selectedUtility.version || "latest";
+      });
     });
 
     await writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2), "utf8");

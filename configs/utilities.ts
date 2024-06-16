@@ -28,7 +28,7 @@ export const UTILITIES: Utilities = {
     },
     {
       title: "Payload",
-      utilities: [{dependencie: "payload", version: "", dev: false}],
+      utilities: [{dependencie: "payload", version: ""}],
     },
   ],
 };

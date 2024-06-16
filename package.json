@@ -1,6 +1,6 @@
 {
   "name": "create-ldx",
-  "version": "1.3.3",
+  "version": "1.3.7",
   "description": "Create Vite + Tailwind project",
   "main": "index.mjs",
   "bin": "dist/index.js",
